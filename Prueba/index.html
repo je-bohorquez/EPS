@@ -2,25 +2,70 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Galería Interactiva</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Ficha Patrimonial - Ejemplo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .contenedor {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .imagen {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .imagen img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .datos {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+    }
+    .datos div {
+      padding: 5px;
+    }
+    .etiqueta {
+      font-weight: bold;
+      color: #34495e;
+    }
+    .valor {
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-
-  <header>
-    <h1>Galería Interactiva</h1>
-    <p>Explora imágenes con estilo y funcionalidad</p>
-  </header>
-
-  <main class="gallery" id="gallery">
-    <!-- Tarjetas generadas por JavaScript -->
-  </main>
-
-  <footer>
-    &copy; 2025 Juan Eder -  Control Patrimonial
-  </footer>
-
-  <script src="script.js"></script>
+  <div class="contenedor">
+    <h1>Ficha Patrimonial</h1>
+    <div class="imagen">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA..." alt="Imagen del bien">
+    </div>
+    <div class="datos">
+      <div class="etiqueta">Código Patrimonial:</div>
+      <div class="valor">EPS-00123</div>
+      <div class="etiqueta">Descripción:</div>
+      <div class="valor">Motobomba de 5HP para sistema de agua potable</div>
+      <div class="etiqueta">Ubicación:</div>
+      <div class="valor">Planta de Tratamiento - Sector A</div>
+      <div class="etiqueta">Estado:</div>
+      <div class="valor">Operativo</div>
+      <div class="etiqueta">Fecha de Adquisición:</div>
+      <div class="valor">2023-08-15</div>
+    </div>
+  </div>
 </body>
 </html>
